@@ -18,3 +18,7 @@ This configuration uses the following options:
   
 All tests are run from the 'playwright' folder.  
 - Run All Tests: ```npx playwright test```
+
+## Test List
+Top Nav Bar - playwright.top-nav.spec.js
+  
