@@ -9,7 +9,7 @@
     "report": "npx playwright show-report"
   },
   "keywords": [],
-  "author": "Martin Chamberlain",
+  "author": "maChamberlain <martin.a.chamberlain@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.61.1",
