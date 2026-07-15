@@ -1,5 +1,3 @@
-import { expect } from '@playwright/test';
-
 export class TopNav {
     /**
      * @param {import('@playwright/test').Page} page

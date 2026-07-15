@@ -12,6 +12,6 @@ export class PlaywrightDocsPage extends BasePage {
 
     async goto() {
         // Entry point path.
-        await this.page.goto('https://playwright.dev/docs/intro');
+        await this.page.goto('/docs/intro');
     }
 }

@@ -1,4 +1,3 @@
-import { expect } from '@playwright/test';
 import { BasePage } from '../base-page/BasePage.js';
 
 export class PlaywrightHomePage extends BasePage {
@@ -12,6 +11,6 @@ export class PlaywrightHomePage extends BasePage {
 
     async goto() {
         // Entry point path.
-        await this.page.goto('https://playwright.dev');
+        await this.page.goto(this.baseURL);
     }
 }

@@ -1,12 +1,15 @@
 {
-  "name": "playwright",
+  "name": "playwright-poc",
   "version": "1.0.0",
-  "description": "",
+  "description": "PoC Basic Playwright Tests",
   "type": "module",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "report": "npx playwright show-report"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Martin Chamberlain",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.61.1",

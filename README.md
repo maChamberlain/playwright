@@ -1,9 +1,9 @@
 # Playwright - Example Automation  
   
-This repository contains basic examples of Playwright automation.
-> NOTE: All folders are relative to the base Playwright URL: https://playwright.dev/  
-
-This configuration uses the following options:  
+This repository contains basic examples of Playwright automation.  
+> NOTE: All tests run against the Playwright source page https://playwright.dev/  
+  
+Configuration options in use:  
 - screenshots: On failure
 - trace: On retry
 
