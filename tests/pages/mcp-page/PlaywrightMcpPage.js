@@ -1,10 +1,10 @@
 import { expect } from '@playwright/test';
 import { BasePage } from '../base-page/BasePage.js';
 
-export class PlaywrightDocsPage extends BasePage {
+export class PlaywrightMcpPage extends BasePage {
     /**
      * @param {import('@playwright/test').Page} page
-     * Base Page Object for the Playwright Docs Page
+     * Base Page Object for the Playwright MCP Page
      */
     constructor(page) {
         super(page);
@@ -12,6 +12,6 @@ export class PlaywrightDocsPage extends BasePage {
 
     async goto() {
         // Entry point path.
-        await this.page.goto('https://playwright.dev/docs/intro');
+        await this.page.goto('https://playwright.dev/mcp/introduction');
     }
 }

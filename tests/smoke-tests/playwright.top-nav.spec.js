@@ -21,3 +21,12 @@ test('Playwright Docs page - Top nav items are displayed', async ({ docsPage }) 
     await expect(docsPage.topNav.cliLink).toBeVisible();
     await expect(docsPage.topNav.apiLink).toBeVisible();
 });
+
+// Check Top Nav of the MCP Page
+test('Playwright MCP page - Top nav items are displayed', async ({ mcpPage }) => {
+    // Expect topNav to display: Docs, MCP, CLI, API
+    await expect(mcpPage.topNav.docsLink).toBeVisible();
+    await expect(mcpPage.topNav.mcpLink).toBeVisible();
+    await expect(mcpPage.topNav.cliLink).toBeVisible();
+    await expect(mcpPage.topNav.apiLink).toBeVisible();
+});
