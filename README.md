@@ -19,6 +19,6 @@ All tests are run from the 'playwright' folder.
 - Run All Tests: ```npx playwright test```
 
 ## Test List
-Top Nav Bar - playwright.top-nav.spec.js
-Basic Home Page navigation - playwright  basic-homepage-navigation.spec
+Top Nav Bar - playwright.top-nav.spec.js  
+Basic Home Page navigation - playwright basic-homepage-navigation.spec
   
