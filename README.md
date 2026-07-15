@@ -20,5 +20,5 @@ All tests are run from the 'playwright' folder.
 
 ## Test List
 Top Nav Bar - playwright.top-nav.spec.js
-Basic Home Page navigation - playwright.basic-homepage-navigation.spec
+Basic Home Page navigation - playwright  basic-homepage-navigation.spec
   
