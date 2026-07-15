@@ -1,12 +1,11 @@
 # Playwright - Example Automation  
   
 This repository contains basic examples of Playwright automation.  
-> NOTE: All tests run against the Playwright source page https://playwright.dev/  
+> NOTE: All tests run against the Playwright source page https://playwright.dev/ which is a third party site. 
   
 Configuration options in use:  
 - screenshots: On failure
 - trace: On retry
-
   
 ## Setup
   
@@ -21,4 +20,5 @@ All tests are run from the 'playwright' folder.
 
 ## Test List
 Top Nav Bar - playwright.top-nav.spec.js
+Basic Home Page navigation - playwright.basic-homepage-navigation.spec
   

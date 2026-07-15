@@ -5,7 +5,7 @@ import { test, expect } from '../fixtures/fixtures.js';
 */
 
 // Check Top Nav of the Home Page
-test('Playwright Home page - Top nav items are displayed', async ({ homePage }) => {
+test('Playwright Home page - Top nav items are displayed', async ({ homePage, page, baseURL }) => {
     // Expect topNav to display: Docs, MCP, CLI, API
     await expect(homePage.topNav.docsLink).toBeVisible();
     await expect(homePage.topNav.mcpLink).toBeVisible();
