@@ -11,6 +11,6 @@ export class PlaywrightHomePage extends BasePage {
 
     async goto() {
         // Entry point path.
-        await this.page.goto(this.baseURL);
+        await this.page.goto('/');
     }
 }

@@ -8,6 +8,6 @@ export class BasePage {
     constructor(page) {
         this.page = page;
         this.topNav = new TopNav(page);
-        this.baseURL = 'https://playwright.dev/';
+        // Base URL handled in playwright.config.js
     }
 }
