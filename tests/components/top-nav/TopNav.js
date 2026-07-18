@@ -1,7 +1,7 @@
 export class TopNav {
     /**
      * @param {import('@playwright/test').Page} page
-     * Base Page Object for the left side nav bar common to pages
+     * Base Page Object for the top nav bar common to pages
      */
     constructor(page) {
         this.page = page;

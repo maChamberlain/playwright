@@ -1,12 +1,12 @@
 import { test as base } from '@playwright/test';
-import { PlaywrightHomePage } from '../pages/home-page/PlaywrightHomePage.js';
+import { HomePage } from '../pages/home-page/HomePage.js';
 import { DocsIntroPage } from '../pages/docs-page/DocsIntroPage.js';
 import { WritingTestsPage } from '../pages/docs-page/WritingTestsPage.js';
-import { PlaywrightMcpPage } from '../pages/mcp-page/PlaywrightMcpPage.js';
+import { McpIntroPage } from '../pages/mcp-page/McpIntroPage.js';
 
 export const test = base.extend({
     homePage: async ({ page }, use) => {
-        const homePage = new PlaywrightHomePage(page);
+        const homePage = new HomePage(page);
         await homePage.goto();
         await use(homePage);
     },
@@ -24,7 +24,7 @@ export const test = base.extend({
     },
 
     mcpPage: async ({ page }, use) => {
-        const mcpPage = new PlaywrightMcpPage(page);
+        const mcpPage = new McpIntroPage(page);
         await mcpPage.goto();
         await use(mcpPage);
     },

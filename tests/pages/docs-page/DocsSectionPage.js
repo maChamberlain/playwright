@@ -5,7 +5,6 @@ export class DocsSectionPage extends BasePage {
     /**
      * @param {import('@playwright/test').Page} page
      * Section base for all Docs pages: adds the docs left sidebar.
-     * Not a concrete page — extend it, don't instantiate it (no goto()).
      */
     constructor(page) {
         super(page);

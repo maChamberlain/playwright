@@ -1,9 +1,9 @@
 import { BasePage } from '../base-page/BasePage.js';
 
-export class PlaywrightHomePage extends BasePage {
+export class HomePage extends BasePage {
     /**
      * @param {import('@playwright/test').Page} page
-     * Base Page Object for the Playwright Main Homepage
+     * Page Object for the playwright.dev Home page
      */
     constructor(page) {
         super(page);

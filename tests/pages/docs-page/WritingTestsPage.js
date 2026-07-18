@@ -7,6 +7,7 @@ export class WritingTestsPage extends DocsSectionPage {
      */
     constructor(page) {
         super(page);
+        this.pageHeading = page.getByRole('heading', { name: "Writing tests", level: 1 });
     }
 
     async goto() {

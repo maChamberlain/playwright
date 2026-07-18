@@ -26,4 +26,5 @@ All tests are run from the 'playwright' folder.
 | --- | --- | --- |
 | Top Nav Bar | Validates all top nav items are displayed on the Home, Docs, and MCP pages | `playwright.top-nav.spec.js` |
 | Basic Home Page Navigation | Validates top nav links navigate from the Home page to the correct pages | `playwright.basic-homepage-navigation.spec.js` |
+| Leftside Nav Navigation | Validates Docs leftside nav items (Installation, Writing tests) navigate to the correct pages | `playwright.left-nav-navigation.spec.js` |
 

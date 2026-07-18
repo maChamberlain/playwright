@@ -1,10 +1,10 @@
 import { BasePage } from '../base-page/BasePage.js';
 import { LeftSideNav } from '../../components/left-side-nav/LeftSideNav.js'
 
-export class PlaywrightMcpPage extends BasePage {
+export class McpIntroPage extends BasePage {
     /**
      * @param {import('@playwright/test').Page} page
-     * Base Page Object for the Playwright MCP Page
+     * Page Object for the MCP Introduction page
      */
     constructor(page) {
         super(page);
