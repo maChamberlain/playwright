@@ -1,10 +1,9 @@
-import { expect } from '@playwright/test';
-import { BasePage } from '../base-page/BasePage.js';
+import { DocsSectionPage } from './DocsSectionPage.js';
 
-export class PlaywrightDocsPage extends BasePage {
+export class DocsIntroPage extends DocsSectionPage {
     /**
      * @param {import('@playwright/test').Page} page
-     * Base Page Object for the Playwright Docs Page
+     * Page Object for the Docs Intro page (/docs/intro)
      */
     constructor(page) {
         super(page);

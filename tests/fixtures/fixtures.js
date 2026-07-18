@@ -1,6 +1,7 @@
 import { test as base } from '@playwright/test';
 import { PlaywrightHomePage } from '../pages/home-page/PlaywrightHomePage.js';
-import { PlaywrightDocsPage } from '../pages/docs-page/PlaywrightDocsPage.js';
+import { DocsIntroPage } from '../pages/docs-page/DocsIntroPage.js';
+import { WritingTestsPage } from '../pages/docs-page/WritingTestsPage.js';
 import { PlaywrightMcpPage } from '../pages/mcp-page/PlaywrightMcpPage.js';
 
 export const test = base.extend({
@@ -11,9 +12,15 @@ export const test = base.extend({
     },
 
     docsPage: async ({ page }, use) => {
-        const docsPage = new PlaywrightDocsPage(page);
+        const docsPage = new DocsIntroPage(page);
         await docsPage.goto();
         await use(docsPage);
+    },
+
+    writingTestsPage: async ({ page }, use) => {
+        const writingTestsPage = new WritingTestsPage(page);
+        await writingTestsPage.goto();
+        await use(writingTestsPage);
     },
 
     mcpPage: async ({ page }, use) => {
