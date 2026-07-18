@@ -4,29 +4,25 @@ import { test, expect } from '../fixtures/fixtures.js';
 * Atomic tests to validate all items in the top navigation bar are displayed.
 */
 
+// Expect topNav to display: Docs, MCP, CLI, API
+async function expectTopNavItemsVisible(topNav) {
+    await expect(topNav.docsLink).toBeVisible();
+    await expect(topNav.mcpLink).toBeVisible();
+    await expect(topNav.cliLink).toBeVisible();
+    await expect(topNav.apiLink).toBeVisible();
+}
+
 // Check Top Nav of the Home Page
-test('Playwright Home page - Top nav items are displayed', async ({ homePage, page, baseURL }) => {
-    // Expect topNav to display: Docs, MCP, CLI, API
-    await expect(homePage.topNav.docsLink).toBeVisible();
-    await expect(homePage.topNav.mcpLink).toBeVisible();
-    await expect(homePage.topNav.cliLink).toBeVisible();
-    await expect(homePage.topNav.apiLink).toBeVisible();
+test('Playwright Home page - Top nav items are displayed', async ({ homePage }) => {
+    await expectTopNavItemsVisible(homePage.topNav);
 });
 
 // Check Top Nav of the Docs Page
 test('Playwright Docs page - Top nav items are displayed', async ({ docsPage }) => {
-    // Expect topNav to display: Docs, MCP, CLI, API
-    await expect(docsPage.topNav.docsLink).toBeVisible();
-    await expect(docsPage.topNav.mcpLink).toBeVisible();
-    await expect(docsPage.topNav.cliLink).toBeVisible();
-    await expect(docsPage.topNav.apiLink).toBeVisible();
+    await expectTopNavItemsVisible(docsPage.topNav);
 });
 
 // Check Top Nav of the MCP Page
 test('Playwright MCP page - Top nav items are displayed', async ({ mcpPage }) => {
-    // Expect topNav to display: Docs, MCP, CLI, API
-    await expect(mcpPage.topNav.docsLink).toBeVisible();
-    await expect(mcpPage.topNav.mcpLink).toBeVisible();
-    await expect(mcpPage.topNav.cliLink).toBeVisible();
-    await expect(mcpPage.topNav.apiLink).toBeVisible();
+    await expectTopNavItemsVisible(mcpPage.topNav);
 });

@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test",
+    "test-with-trace": "npx playwright test --trace on",
     "report": "npx playwright show-report"
   },
   "keywords": [],

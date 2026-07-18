@@ -3,7 +3,7 @@ import { DocsSectionPage } from './DocsSectionPage.js';
 export class WritingTestsPage extends DocsSectionPage {
     /**
      * @param {import('@playwright/test').Page} page
-     * Page Object for the Writing Tests docs page (/docs/writing-tests)
+     * Page Object for the Writing Tests docs page
      */
     constructor(page) {
         super(page);

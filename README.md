@@ -18,7 +18,12 @@ Configuration options in use:
 ## Usage 
   
 All tests are run from the 'playwright' folder.  
-- Run All Tests: ```npx playwright test```
+
+| Action | Command |
+| --- | --- |
+| Run All Tests | `npx playwright test` |
+| Run Tests with Trace | `npx playwright test --trace on` |
+| Show Report | `npx playwright show-report` |
 
 ## Test List
 
