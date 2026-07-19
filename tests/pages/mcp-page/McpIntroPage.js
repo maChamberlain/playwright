@@ -1,14 +1,13 @@
-import { BasePage } from '../base-page/BasePage.js';
-import { LeftSideNav } from '../../components/left-side-nav/LeftSideNav.js'
+import { McpSectionPage } from './McpSectionPage.js';
 
-export class McpIntroPage extends BasePage {
+export class McpIntroPage extends McpSectionPage {
     /**
      * @param {import('@playwright/test').Page} page
      * Page Object for the MCP Introduction page
      */
     constructor(page) {
         super(page);
-        this.leftSideNav = new LeftSideNav(page);
+        this.pageHeading = page.getByRole('heading', { name: "Playwright MCP", level: 1 });
     }
 
     async goto() {
