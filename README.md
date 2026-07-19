@@ -2,12 +2,35 @@
   
 ![Playwright Tests](https://github.com/maChamberlain/playwright/actions/workflows/playwright.yml/badge.svg)
   
-This repository contains basic examples of Playwright automation.  
-> NOTE: All tests run against the Playwright source page https://playwright.dev/ which is a third party site. 
+> NOTE: All tests run against the Playwright source page (a third party site):  
+  https://playwright.dev/ 
 
-Configuration options in use:  
-- screenshots: On failure
-- trace: On retry
+## Summary
+This repository is a basic examples of Playwright automation.  
+It runs three test files against the Playwright Documentation site.  
+Browsers Used: Chromium, Firefox, and Webkit (Safari)
+
+GitHub Actions is triggered on Pull Requests or pushes to main,  
+running all current tests. The current test state is indicated by  
+the badge at the top of this Readme. 
+
+## Design Notes  
+This uses Page Object Models along with composed components.   
+The BasePage Object provides the shared component (Top Nav).  
+Section page objects (DocsSectionPage) provide components  
+shared by related pages.
+
+Fixtures drive the page setup, and initial page navigation. 
+  
+These tests are small atomic tests covering a narrow range of behavior. 
+
+## Configuration Options  
+
+| Option | Setting |
+| --- | --- |
+| Retry | 1 in CI |
+| Trace | On retry in CI |
+| Screenshot | On failure |
   
 ## Setup
   
