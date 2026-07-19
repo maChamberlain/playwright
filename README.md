@@ -6,9 +6,9 @@
   https://playwright.dev/ 
 
 ## Summary
-This repository is a basic examples of Playwright automation.  
+This repository is a basic examples of JavaScipt Playwright automation.  
 It runs three test files against the Playwright Documentation site.  
-Browsers Used: Chromium, Firefox, and Webkit (Safari)
+**Browsers Used**: Chromium, Firefox, and Webkit (Safari)
 
 GitHub Actions is triggered on Pull Requests or pushes to main,  
 running all current tests. The current test state is indicated by  
