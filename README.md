@@ -6,7 +6,7 @@
   https://playwright.dev/ 
 
 ## Summary
-This repository is a basic examples of JavaScipt Playwright automation.  
+This repository is a basic example of JavaScipt Playwright automation.  
 It runs three test files against the Playwright Documentation site.  
 **Browsers Used**: Chromium, Firefox, and Webkit (Safari)
 
@@ -36,6 +36,8 @@ These tests are small atomic tests covering a narrow range of behavior.
   
 1. Clone this repository
 2. In target folder: ```npm install```
+3. Install Playwright Browsers: ```npx playwright install```
+> NOTE: Skip this step if you already have the browsers installed.
 
 
 ## Usage 
