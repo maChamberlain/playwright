@@ -44,11 +44,11 @@ These tests are small atomic tests covering a narrow range of behavior.
   
 All tests are run from the 'playwright' folder.  
 
-| Action | Command |
-| --- | --- |
-| Run All Tests | `npx playwright test` |
-| Run Tests with Trace | `npx playwright test --trace on` |
-| Show Report | `npx playwright show-report` |
+| Action | NPM Command | NPX Command |
+| --- | --- | --- |
+| Run All Tests | ```npm test``` | ```npx playwright test``` |
+| Run Tests with Trace | ```npm test-with-trace``` | ```npx playwright test --trace on``` |
+| Show Report | ```npm report``` | ```npx playwright show-report``` |
 
 ## Test List
 
