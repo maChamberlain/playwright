@@ -47,8 +47,9 @@ All tests are run from the 'playwright' folder.
 | Action | NPM Command | NPX Command |
 | --- | --- | --- |
 | Run All Tests | `npm test` | `npx playwright test` |
-| Run Tests with Trace | `npm test-with-trace` | `npx playwright test --trace on` |
-| Show Report | `npm report` |`npx playwright show-report` |
+| Run Tests with Trace | `npm run test-with-trace` | `npx playwright test --trace on` |
+| Run Tests w/headed browsers | `npm run test-headed` | `npx playwright test --headed` |
+| Show Report | `npm run report` |`npx playwright show-report` |
 
 ## Test List
 

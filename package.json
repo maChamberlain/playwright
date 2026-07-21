@@ -7,6 +7,7 @@
   "scripts": {
     "test": "npx playwright test",
     "test-with-trace": "npx playwright test --trace on",
+    "test-headed": "npx playwright test --headed",
     "report": "npx playwright show-report"
   },
   "keywords": [],
