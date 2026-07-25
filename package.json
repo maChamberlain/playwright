@@ -8,13 +8,21 @@
     "test": "npx playwright test",
     "test-with-trace": "npx playwright test --trace on",
     "test-headed": "npx playwright test --headed",
-    "report": "npx playwright show-report"
+    "report": "npx playwright show-report",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "maChamberlain <martin.a.chamberlain@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.61.1",
-    "@types/node": "^26.1.1"
+    "@types/node": "^26.1.1",
+    "eslint": "^10.8.0",
+    "eslint-plugin-playwright": "^2.10.5",
+    "globals": "^17.7.0"
+  },
+  "dependencies": {
+    "node22": "^1.0.0"
   }
 }
