@@ -21,8 +21,5 @@
     "eslint": "^10.8.0",
     "eslint-plugin-playwright": "^2.10.5",
     "globals": "^17.7.0"
-  },
-  "dependencies": {
-    "node22": "^1.0.0"
   }
 }
