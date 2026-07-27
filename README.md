@@ -1,6 +1,6 @@
 # Playwright - Example Automation  
   
-![Playwright Tests](https://github.com/maChamberlain/playwright/actions/workflows/playwright.yml/badge.svg)
+![Playwright Tests](https://github.com/maChamberlain/playwright/actions/workflows/test-automation.yml/badge.svg)
   
 > NOTE: All tests run against the Playwright source page (a third party site):  
   https://playwright.dev/ 
