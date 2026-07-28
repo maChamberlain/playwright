@@ -51,6 +51,16 @@ All tests are run from the 'playwright' folder.
 | Run Tests w/headed browsers | `npm run test-headed` | `npx playwright test --headed` |
 | Show Report | `npm run report` |`npx playwright show-report` |
 
+### Running a Subset  
+
+Each spec file is grouped in a `test.describe` block carrying a single tag,  
+so subsets can be selected with `--grep`.  
+
+| Tag | Covers | NPX Command |
+| --- | --- | --- |
+| `@smoke` | All specs in `tests/smoke-tests` | `npx playwright test --grep "@smoke"` |
+| `@search` | All specs in `tests/search-tests` | `npx playwright test --grep "@search"` |
+
 ## Test List
 
 | Test Area | Description | Spec File |
@@ -58,4 +68,5 @@ All tests are run from the 'playwright' folder.
 | Top Nav Bar | Validates all top nav items are displayed on the Home, Docs, and MCP pages | `playwright.top-nav.spec.js` |
 | Basic Home Page Navigation | Validates top nav links navigate from the Home page to the correct pages | `playwright.basic-homepage-navigation.spec.js` |
 | Leftside Nav Navigation | Validates Docs leftside nav items (Installation, Writing tests) navigate to the correct pages | `playwright.left-nav-navigation.spec.js` |
+| Basic Search | Validates searching for 'mcp' from the top nav navigates to the MCP Introduction page | `playwright.basic-search.spec.js` |
 
